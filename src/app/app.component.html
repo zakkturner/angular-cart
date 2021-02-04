@@ -1,2 +1,2 @@
-<app-product-list [products]="productList"></app-product-list>
+<app-product-list [products]="productList" (productAdded)="addProductToCart($event)"></app-product-list>
 <app-shopping-cart></app-shopping-cart>

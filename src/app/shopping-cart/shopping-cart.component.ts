@@ -14,6 +14,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ShoppingCartComponent implements OnInit {
   @Input() products: any[];
+  total(){
+    return this.products.reduce((sum, prod) => sum += prod.num, 0)
+  }
 
   constructor() {}
 
